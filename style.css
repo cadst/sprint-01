@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 1920px;
-}
-
 .header {
   height: 70px;
   border-bottom: 1px solid #DFDFDF;
@@ -14,7 +10,6 @@ body {
 .banner {
   height: 540px;
   background: #CFE5FF;
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -37,16 +32,14 @@ body {
 }
 
 .header-container {
-  width: 1120px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 200px;
 }
 
 .banner-container {
   display: flex;
   align-items: center;
-  width: 1110px;
   height: 340px;
   gap: 7px;
 }
@@ -73,6 +66,7 @@ body {
 }
 
 .content-info {
+  width: 310px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,13 +74,6 @@ body {
 
 .content-info.reverse {
   text-align: right; /* 오른쪽 정렬 */
-}
-
-.content-description {
-  width: 274px;
-  height: 200px;
-  gap: 24px;
-
 }
 
 .footer-link {
@@ -126,7 +113,7 @@ body {
   font-family: Pretendard;
   font-weight: 700;
   font-style: Bold;
-  font-size: 40px;
+  font-size: clamp(20px, 3vw, 40px);
   line-height: 140%;
   letter-spacing: 0%;
   vertical-align: middle;
@@ -146,7 +133,7 @@ body {
   font-family: Pretendard;
   font-weight: 600;
   font-style: SemiBold;
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
   line-height: 32px;
   letter-spacing: 0%;
   color: #F9FAFB;
@@ -161,11 +148,15 @@ body {
   background: #1251AA;
 }
 
+.banner-container.bottom img {
+  margin-bottom: 50px;
+}
+
 .content-text-01 {
   font-family: Abhaya Libre ExtraBold;
   font-weight: 800;
   font-style: normal;
-  font-size: 18px;
+  font-size: clamp(12px, 1.5vw, 18px);
   line-height: 26px;
   letter-spacing: 0%;
   vertical-align: middle;
@@ -173,10 +164,12 @@ body {
 }
 
 .content-text-02 {
+  margin-top: 12px;
+  margin-bottom: 24px;
   font-family: Pretendard;
   font-weight: 700;
   font-style: Bold;
-  font-size: 40px;
+  font-size: clamp(20px, 3vw, 40px);
   line-height: 140%;
   letter-spacing: 2%;
   vertical-align: middle;
@@ -187,7 +180,7 @@ body {
   font-family: Pretendard;
   font-weight: 500;
   font-style: Medium;
-  font-size: 24px;
+  font-size: clamp(16px, 2vw, 24px);
   line-height: 32px;
   letter-spacing: 0%;
   vertical-align: middle;
@@ -198,7 +191,7 @@ body {
   font-family: Pretendard;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: clamp(13px, 1vw, 16px);
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
@@ -210,7 +203,7 @@ body {
   font-family: Pretendard;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: clamp(13px, 1vw, 16px);
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
