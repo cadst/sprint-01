@@ -3,6 +3,9 @@
 header {
   height: 70px;
   border-bottom: 1px solid #DFDFDF;
+  position: sticky;
+  background: #ffffff;
+  top: 0;
 }
 
 .header-container {
@@ -47,9 +50,16 @@ section {
 .banner-container {
   display: flex;
   align-items: center;
-  height: 340px;
   gap: 7px;
   margin: 0 auto;
+}
+
+.banner-container.top {
+  height: 340px;
+}
+
+.banner-container.bottom {
+  height: 397px;
 }
 
 .banner-info {
@@ -93,10 +103,6 @@ section {
 
 .banner-button:active {
   background: #1251AA;
-}
-
-.banner-container.bottom img {
-  margin-bottom: 55px;
 }
 
 /* content */
